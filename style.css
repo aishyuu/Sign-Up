@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "norse-bold";
+    src: url("./assets/Norse-Bold.otf");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --variable-width: max(40vw, 200px);
+    --front-color: #67AD30;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+}
+
+.backdrop {
+    width: var(--variable-width);
+    flex-shrink: 0;
+    background-image: url(./assets/marcell-rubies-cKGtI-S5EPY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.odin-project-container {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    top: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-family: "norse-bold", "Gill Sans", sans-serif;
+}
+
+.odin-project-container > img {
+    height: 2rem;
+}
+
+.github-container {
+    position: relative;
+    top: 85%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    color: white;
+    font-size: 2rem;
+    font-family: "norse-bold", "Gill Sans", sans-serif;
+}
+
+.github-container > a {
+    text-decoration: none;
+    color: white;
+}
+
+.github-container > a:hover {
+    color: var(--front-color)
+}
+
+.form {
+    width: calc(100vw - var(--variable-width));
+    background-color: #221D20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-main {
+    width: 80%;
+    border: 2px solid var(--front-color);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.form-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: max(250px, 40%);
+}
+
+.form-label {
+    margin-bottom: 1rem;
+    color: var(--front-color)
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--front-color)
+}
+
+.create-btn {
+    display: block;
+    background-color: var(--front-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    padding: 0.75rem;
+}
+
+.login-text {
+    color: white;
+}
+
+.login-link {
+    text-decoration: none;
+    color: var(--front-color);
+}
